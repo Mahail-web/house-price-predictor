@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Scratch and models cache
+models/*.joblib
+scratch/
+debug.html
+cloudflared.exe
