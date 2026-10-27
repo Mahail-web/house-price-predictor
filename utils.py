@@ -99,6 +99,35 @@ def get_custom_css() -> str:
         max-width: 1200px;
     }
 
+    /* Explicit dark typography in main content to prevent dark-mode invisible white text */
+    .main, .main p, .main span, .main li, .main label, .main div[data-testid="stMarkdownContainer"] p, .main div[data-testid="stMarkdownContainer"] li {
+        color: #334155 !important;
+    }
+    .main h1, .main h2, .main h3, .main h4, .main h5, .main h6 {
+        color: #0F172A !important;
+    }
+    .main strong {
+        color: #0F172A !important;
+    }
+    .main .katex, .main .katex-display, .main .katex-html {
+        color: #0F172A !important;
+    }
+    .main code {
+        color: #0F172A !important;
+        background-color: #E2E8F0 !important;
+        padding: 2px 6px !important;
+        border-radius: 4px !important;
+    }
+    .main blockquote {
+        background-color: #F1F5F9 !important;
+        border-left: 4px solid #0D9488 !important;
+        padding: 10px 16px !important;
+        border-radius: 4px !important;
+    }
+    .main blockquote p {
+        color: #1E293B !important;
+    }
+
     /* Sidebar Styling */
     section[data-testid="stSidebar"] {
         background-color: #0F172A;
